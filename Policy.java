@@ -227,8 +227,10 @@ public class Policy
     
     /**
       The getPolicyPrice method returns the price of the insurance policy.
-      @param holderAge
-      @param 
+      @param holderAge The age of the policy holder.
+      @param holderSmoking The smoking status of the policy holder ("Smoker" or "Non-Smoker").
+      @param holderBMI The Body Mass Index (BMI) of the policy holder.
+      @return The total price of the insurance policy based on the holder's age, smoking status, and BMI.
     */
     public double getPolicyPrice(int holderAge, String holderSmoking, double holderBMI)
     {

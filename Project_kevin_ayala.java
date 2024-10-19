@@ -50,6 +50,7 @@ import java.util.Scanner;
       System.out.print("Please enter the Policyholder's Weight (in pounds):");
       weightInput = keyboard.nextDouble();
       
+      //Create a Policy object. 
       Policy userPolicy = new Policy(
         policyNumInput, 
         ageInput, 
@@ -65,6 +66,7 @@ import java.util.Scanner;
       
       policyTotalPrice = userPolicy.getPolicyPrice(ageInput, smokingStatusInput, holderBMI);
       
+      //Call displayValues method to display Policy information and computations. 
       displayValues(userPolicy, heightInput, weightInput, holderBMI, policyTotalPrice);
    }
    
